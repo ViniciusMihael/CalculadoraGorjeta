@@ -1,0 +1,60 @@
+body{/*Aqui são os estilos para o site todo*/
+    font: normal 15pt Arial;
+    background-image: linear-gradient(to right,aqua,blue);
+}
+.titulo{/*Aqui sao os estilos para o titulo do projeto*/
+    position: absolute;
+    left: 41%;
+    transform: translate(-10%,-10%);
+}
+.conta_btn{/*Aqui são os estilos para a input conta que recebe o valor da conta*/
+    padding-left: 15px;
+    font: normal 15pt Arial;
+    height: 20px;
+    width: 210px;
+    border: solid black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}   
+    .gorj_btn{/*Aqui os estilos para o input da porcentagem da gorjeta*/
+    padding-left: 15px;
+    font: normal 15pt Arial;
+    height: 20px;
+    width: 150px;
+    border: solid black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+} 
+.cal_btn{/*Aqui são os estilos do botão para calcular*/
+    border: solid black;
+    border-radius: 20px;
+    margin-left: 70px;
+    font: normal 15pt Arial;
+    width: 300px;
+}
+.cal_btn:hover{/*Aqui eu fiz um hover no botão calcular*/
+    background-color: indigo;
+    color: white;
+}
+.calculadora{/*Aqui eu fiz uma div com a class calculadora e fiz os detalhes*/
+    box-shadow: 10px 10px rgb(110, 90, 90);
+    border-radius: 20px;
+    margin-top: 5%;
+    padding: 50px 50px;
+    background-color: blue;
+    border-color: black;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    left: 40%;
+    transform: translate(-10%,-10%);
+}
+#total{/*Aqui são os emojis que eu coloquei no indice da lista não ordenada*/
+    list-style-type: '💰';
+}
+#gorjeta{
+    list-style-type: '📝';
+}
+#gorTotal{
+    list-style-type: '🧾';
+}

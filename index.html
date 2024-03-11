@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="style.css">k
+
+</head>
+<body>
+
+    <!--Aqui e o Titulo do projeto -->
+    <h1 class="titulo"><u>Calculadora de Gorjeta</u></h1><br><br><br>
+
+    <!--Aqui e a div que irá ter dentro os inputs e tudo mais-->
+
+    <div class="calculadora" style="color: white;">
+
+
+    <!--Aqui eu usei os inputs para pegar os valores numericos assim eu não preciso me preocupar com erros de tipos ja que só vai entrar caractere numericos-->
+        Valor da conta R$<input type="number" class="conta_btn" name="conta" id="conta" required><br>
+ Percentual de gorjeta %<input type="number" class="gorj_btn" name="Gorjeta" id="gorjeta" required>
+                        <input type="button" class="cal_btn" value="Calcular" onclick="calcular()"><br>
+
+    <!--Aqui e a lista não ordenada que vai ter os indice personalizados -->
+        <ul>
+            <li id="total"><p>Valor da conta e R$:<span id="vlr"></span></p></li>
+            <li id="gorjeta"><p>Valor da gorjeta é R$:<span id="resultado"></span></p></li>
+            <li id="gorTotal"><p>O valor total é R$:<span id="somados"></span></p></li>
+        </ul>
+            
+    </div>
+         
+    </div>
+
+        <script>
+            function calcular(){  
+                let valor_conta = parseFloat(document.getElementById("conta").value);
+                let valor_gorj = parseFloat(document.getElementById("gorjeta").value);
+                let resultado = Math.round((valor_conta*valor_gorj)/100);
+
+                if(!valor_conta){
+                    alert('O valor da conta está vazio!!')
+                }else{
+
+                let soma = valor_conta + resultado;
+
+                document.getElementById('vlr').textContent = valor_conta.toFixed(2);
+                document.getElementById('resultado').textContent = resultado.toFixed(2);
+                document.getElementById('somados').textContent = soma.toFixed(2);
+                     }
+        }   
+          
+        </script>
+
+
+
+</body>
+</html>
