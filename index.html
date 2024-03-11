@@ -20,7 +20,7 @@
 
     <!--Aqui eu usei os inputs para pegar os valores numericos assim eu não preciso me preocupar com erros de tipos ja que só vai entrar caractere numericos-->
         Valor da conta R$<input type="number" class="conta_btn" name="conta" id="conta" required><br>
- Percentual de gorjeta %<input type="number" class="gorj_btn" name="Gorjeta" id="gorjeta" required>
+  Percentual de gorjeta %<input type="number" class="gorj_btn" name="Gorjeta" id="gorjeta" required>
                         <input type="button" class="cal_btn" value="Calcular" onclick="calcular()"><br>
 
     <!--Aqui e a lista não ordenada que vai ter os indice personalizados -->
@@ -34,27 +34,8 @@
          
     </div>
 
-        <script>
-            function calcular(){  
-                let valor_conta = parseFloat(document.getElementById("conta").value);
-                let valor_gorj = parseFloat(document.getElementById("gorjeta").value);
-                let resultado = Math.round((valor_conta*valor_gorj)/100);
 
-                if(!valor_conta){
-                    alert('O valor da conta está vazio!!')
-                }else{
-
-                let soma = valor_conta + resultado;
-
-                document.getElementById('vlr').textContent = valor_conta.toFixed(2);
-                document.getElementById('resultado').textContent = resultado.toFixed(2);
-                document.getElementById('somados').textContent = soma.toFixed(2);
-                     }
-        }   
-          
-        </script>
-
-
-
+        <script src="script.js"></script>
+       
 </body>
 </html>
